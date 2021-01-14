@@ -1,16 +1,17 @@
 # Getting Started
 
-## Run postgres with pgadmin for database metrics
 
-```
-docker-compose up -d
-```
-
-## Run the application in docker
+## Build the application in docker
 
 ```
 ./mvnw clean install
 docker build -t stress-app .   
+```
+
+## Run postgres with pgadmin for database metrics and stress-app
+
+```
+docker-compose up -d
 ```
 
 
